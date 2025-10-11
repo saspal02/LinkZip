@@ -9,7 +9,7 @@ import java.time.LocalDateTime;
 @Data
 public class ClickEvent {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private LocalDateTime clickDate;
 
