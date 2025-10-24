@@ -2,7 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
 
-/* ✅ Define your Tailwind v4 theme using @theme */
 @theme {
   /* 🎨 Colors */
   --color-navbarColor: #ffffff;
