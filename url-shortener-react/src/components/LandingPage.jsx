@@ -60,7 +60,7 @@ const LandingPage = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
             className="sm:w-[480px] w-[400px] object-cover rounded-md"
-            src="/images/img.png"
+            src="/images/link1.png"
             alt="Linklytics illustration"
           />
         </div>
