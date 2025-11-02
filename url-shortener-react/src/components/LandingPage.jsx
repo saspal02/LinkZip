@@ -59,7 +59,7 @@ const LandingPage = () => {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="sm:w-[480px] w-[400px] object-cover rounded-md"
+            className="sm:w-[420px] w-[300px] object-cover rounded-md"
             src="/images/link1.png"
             alt="Linklytics illustration"
           />
