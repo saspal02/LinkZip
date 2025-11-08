@@ -6,7 +6,7 @@ import Card from "./Card";
 import { useStoreContext } from "../contextApi/ContextApi";
 
 let desc =
-  "Generate short, memorable links with ease using Linklytics’s intuitive interface. Share URLs effortlessly across platforms. Optimize your sharing strategy with Linklytics. Track clicks and manage your links seamlessly to enhance your online presence. Generate short, memorable links with ease using Linklytics’s intuitive interface. Share URLs effortlessly across platforms.";
+  "Generate short, memorable links with ease using Linkzip’s intuitive interface. Share URLs effortlessly across platforms. Optimize your sharing strategy with Linkzip. Track clicks and manage your links seamlessly to enhance your online presence. Generate short, memorable links with ease using Linkzip’s intuitive interface. Share URLs effortlessly across platforms.";
 
 const LandingPage = () => {
   const navigate = useNavigate();
@@ -14,8 +14,14 @@ const LandingPage = () => {
   console.log("TOKEN FROM LANDING PAGE: " + token);
 
   const dashBoardNavigateHandler = () => {
+  if (token) {
+    navigate("/dashboard"); 
+  } else {
+    navigate("/login"); 
+  }
+};
 
-  };
+
   return (
     <div className="min-h-[calc(100vh-64px)]  lg:px-14 sm:px-8 px-4">
       <div className="lg:flex-row flex-col    lg:py-5   pt-16   lg:gap-10 gap-8 flex justify-between items-center">
@@ -30,13 +36,13 @@ const LandingPage = () => {
             transition={{ duration: 0.8 }}
             className="font-bold font-roboto text-slate-800 md:text-5xl sm:text-4xl text-3xl   md:leading-[55px] sm:leading-[45px] leading-10 lg:w-full md:w-[70%] w-full"
           >
-            Linklytics Simplifies URL Shortening For Efficient Sharing.
+            Linkzip Simplifies URL Shortening For Efficient Sharing.
           </motion.h1>
-          <p className="text-slate-700 text-sm my-5">
-            Linklytics streamlines the process of URL shortening, making sharing
+          <p className="text-slate-700 text-lg my-5">
+            Linkzip streamlines the process of URL shortening, making sharing
             links effortless and efficient. With its user-friendly interface,
-            Linklytics allows you to generate concise, easy-to-share URLs in
-            seconds. Simplify your sharing experience with Linklytics today.
+            Linkzip allows you to generate concise, easy-to-share URLs in
+            seconds. Simplify your sharing experience with Linkzip today.
           </p>
           <div className="flex items-center gap-3">
             <motion.button
@@ -48,7 +54,8 @@ const LandingPage = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
               onClick={dashBoardNavigateHandler}
-              className="bg-custom-gradient  w-40 text-white rounded-md  py-2"
+              className="bg-custom-gradient w-40 text-white rounded-md py-2 
+               transition-all duration-300 hover:opacity-90 hover:scale-105"
             >
               Manage Links
             </motion.button>
@@ -61,7 +68,8 @@ const LandingPage = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
               onClick={dashBoardNavigateHandler}
-              className="border-btnColor border w-40 text-btnColor rounded-md  py-2 "
+              className="border-btnColor border w-40 text-btnColor rounded-md py-2 
+               transition-all duration-300 hover:bg-btnColor hover:text-white hover:scale-105"
             >
               Create Short Link
             </motion.button>
@@ -92,7 +100,7 @@ const LandingPage = () => {
           transition={{ duration: 0.8 }}
           className="text-slate-800 font-roboto font-bold lg:w-[60%]  md:w-[70%] sm:w-[80%] mx-auto text-3xl text-center"
         >
-          Trusted by individuals and teams at the world best companies{" "}
+          Built with precision to make link sharing effortless{" "}
         </motion.p>
         <div className="pt-4 pb-7 grid lg:gap-7 gap-4 xl:grid-cols-4  lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 mt-4">
           <Card
