@@ -1,8 +1,8 @@
 # Linkzip
 
-## About the project
+### Project Link - https://charming-lily-172fda.netlify.app
 
-Project Link - https://charming-lily-172fda.netlify.app
+## About the project
 
 **LinkZip** simplifies URL shortening, making it fast, secure, and easy to manage. Key features include:
 
