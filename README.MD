@@ -2,6 +2,8 @@
 
 ## About the project
 
+Project Link - https://charming-lily-172fda.netlify.app
+
 **LinkZip** simplifies URL shortening, making it fast, secure, and easy to manage. Key features include:
 
 ✂️ **Simple URL Shortening**  
