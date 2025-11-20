@@ -16,8 +16,9 @@
  ⚡ **Fast and Reliable**  
   Enjoy lightning-fast redirects and high uptime with our robust infrastructure. Your links are always available and responsive for a seamless user experience.
 
-  [Watch the demo](./assets/demo.webm)
+## 🎬 Demo
 
+[Watch the demo on YouTube](https://youtu.be/AA5Ili0Q_xg)
 
 
 ## 🛠️ Built With
