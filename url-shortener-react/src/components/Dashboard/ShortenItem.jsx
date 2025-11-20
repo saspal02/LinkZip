@@ -63,7 +63,7 @@ const ShortenItem = ({ originalUrl, shortUrl, clickCount, createdDate }) => {
   // Copy short URL to clipboard
   const handleCopy = async () => {
     try {
-      await navigator.clipboard.writeText(`${import.meta.env.VITE_REACT_FRONT_END_URL}/s/${shortUrl}`);
+      await navigator.clipboard.writeText(`${import.meta.env.VITE_REACT_FRONT_END_URL}/go/${shortUrl}`);
       setIsCopied(true);
       setTimeout(() => setIsCopied(false), 1500); // Reset after 1.5s
     } catch (err) {
@@ -81,9 +81,9 @@ const ShortenItem = ({ originalUrl, shortUrl, clickCount, createdDate }) => {
             <Link
               target="_blank"
               className="text-[17px] font-montserrat font-[600] text-linkColor"
-              to={`${import.meta.env.VITE_REACT_FRONT_END_URL}/s/${shortUrl}`}
+              to={`${import.meta.env.VITE_REACT_FRONT_END_URL}/go/${shortUrl}`}
             >
-              {subDomain}/s/{shortUrl}
+              {subDomain}/go/{shortUrl}
             </Link>
             <FaExternalLinkAlt className="text-linkColor" />
           </div>

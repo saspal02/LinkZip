@@ -2,7 +2,6 @@ package com.linkzip.urlshortener.controller;
 
 import com.linkzip.urlshortener.dtos.ClickEventDTO;
 import com.linkzip.urlshortener.dtos.UrlMappingDTO;
-import com.linkzip.urlshortener.model.ClickEvent;
 import com.linkzip.urlshortener.model.User;
 import com.linkzip.urlshortener.service.UrlMappingService;
 import com.linkzip.urlshortener.service.UserService;
